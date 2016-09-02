@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 #Instalamos las dependencias para el servidor OpenVPN
+RUN apt-get update -q
 RUN apt-get install -qy openvpn iptables socat curl
 
 #Mandamos la configuración del servidor 
