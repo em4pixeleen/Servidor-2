@@ -37,4 +37,10 @@ COPY . ./
 ENV INITSYSTEM on
 
 # Start.sh se ejecutara al arranque del contenedor
-CMD ["./src/start.sh"]
+CMD ["./src/start.sh", run]
+
+
+
+
+
+
